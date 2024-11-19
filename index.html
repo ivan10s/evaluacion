@@ -11,48 +11,54 @@
             justify-content: center;
             padding: 100px;
             background-color: grey;
-            align-content: center;
             gap: 15px;
         }
 
         .box {
             background-color: white;
             width: 300px;
-        }
-
-        .box2 {
-            background-color: white;
-            width: 300px;
-        }
-
-        .foto {
-            margin-left: 75px;
-            margin-top: 30px;
+            position: relative;
+      
         }
 
         .info {
             text-align: center;
-
         }
 
-        .foto2 {
-            margin-left: 75px;
-            margin-top: 30px;
-        }
 
         .online {
             position: absolute;
-            top: 110px;
-            left: 865px;
+            top: 0px;
+            right: 0px;
         }
+
         .nonline {
             position: absolute;
-            top: 110px;
-            left: 1180px;
+            top: 0px;
+            right: 0px;
         }
+
         .iconos {
             text-align: center;
             gap: 15px;
+        }
+
+        .foto {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+        .contactar {
+            background-color: grey;
+            border-radius: 30px;
+            width: 150px;
+            font-size: 20px;
+            position: fixed;
+            right: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
         }
     </style>
 </head>
@@ -60,8 +66,8 @@
 <body>
     <div class="Tarjeta">
         <div class="box">
-            <div class="foto" style="border-radius: 30px; width: 150px; height: 150px; background-color: grey; ">
-
+            <div class="foto">
+                <img src="images.png" alt="" style="border-radius: 30px; border: solid; border-color: blue;">
             </div>
             <div class="info" style>
                 <div>
@@ -83,32 +89,38 @@
                 style="border-radius: 30px; background-color: green; width: 90px; text-align: center; color: white; border: 20px;">
                 <p>En linea</p>
             </div>
+            
+            </div>
+            <div class="box">
+                <div class="foto">
+                    <img src="images.png" alt="" style="border-radius: 30px; border: solid; border-color: blue;">
+                </div>
+                <div class="info" style>
+                    <div>
+                        <h2>Mina Murray</h2>
+                    </div>
+                    <div>
+                        <p>Desarrolladora Web BackEnd</p>
+                    </div>
+                    <div>
+                        <p>Apasionado por crear experiencias Web increibles para toda la comunidad de Rio Negro</p>
+                    </div>
+                </div>
+                <div class="iconos">
+                    <img src="gorjeo.png" alt="" width="30px" height="30px">
+                    <img src="linkedin.png" alt="" width="30px" height="30px">
+                    <img src="github.png" alt="" width="30px" height="30px">
+                </div>
+                <div class="nonline"
+                    style="border-radius: 30px; background-color: red; width: 90px; text-align: center; color: white;">
+                    <p>Desconectado</p>
+                </div>
+            </div>
         </div>
-        <div class="box2" style="border-left: 15px;">
-            <div class="foto2" style="border-radius: 30px; width: 150px; height: 150px; background-color: grey;"> </div>
-            <div class="info" style>
-                <div>
-                    <h2>Mina Murray</h2>
-                </div>
-                <div>
-                    <p>Desarrolladora Web BackEnd</p>
-                </div>
-                <div>
-                    <p>Apasionado por crear experiencias Web increibles para toda la comunidad de Rio Negro</p>
-                </div>
-            </div>
-            <div class="iconos">
-                <img src="gorjeo.png" alt="" width="30px" height="30px">
-                <img src="linkedin.png" alt="" width="30px" height="30px">
-                <img src="github.png" alt="" width="30px" height="30px">
-            </div>
-            <div class="nonline" style="border-radius: 30px; background-color: red; width: 90px; text-align: center; color: white;">
-                <p>Desconectado</p>
-            </div>
+        <div class="contactar">
+            <img src="sobre-abierto.png" alt="" width="30px" height="30px ">
+            <p>Contactar</p>
         </div>
-
-
-
     </div>
 </body>
 
